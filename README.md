@@ -52,8 +52,8 @@ $ruby -v
 ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
 ```
 Work Around:
-1. # coding: Windows-31J, removed
-2. win32ole@pan_database_to_stock.rb▶️require@simlate.rb, Comment out
+1. coding: Windows-31J, removed
+2. win32ole @pan_database_to_stock.rb▶️require @simlate.rb, Comment out
 
 動かした結果(result/8604.csv)
 ```bash
