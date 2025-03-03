@@ -1,4 +1,3 @@
-# coding: Windows-31J
 
 # 取引を表すクラス
 class Trade

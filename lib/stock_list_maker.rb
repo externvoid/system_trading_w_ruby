@@ -1,4 +1,3 @@
-# coding: Windows-31J
 
 require "open-uri"
 

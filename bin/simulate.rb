@@ -1,6 +1,3 @@
-#! ruby -Ks
-# coding: Windows-31J
-
 # すべての銘柄のシミュレーション
 # 使い方: ruby bin/simulate.rb setting_file_name
 # 1銘柄のシミュレーション
@@ -10,7 +7,7 @@
 require "./lib/base"
 require "./lib/simulation"
 require "./lib/text_to_stock"
-require "./lib/pan_database_to_stock"
+# require "./lib/pan_database_to_stock"
 require "fileutils"
 
 class Simulation

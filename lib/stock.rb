@@ -1,4 +1,3 @@
-# coding: Windows-31J
 
 # 株を表すクラス
 class Stock

@@ -1,4 +1,3 @@
-# coding: Windows-31J
 
 require "./lib/text_to_stock"
 

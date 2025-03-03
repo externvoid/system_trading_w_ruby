@@ -1,4 +1,3 @@
-# coding: Windows-31J
 
 # トレーディングシステムの各ルールの管理をするクラス
 class TradingSystem

@@ -1,4 +1,3 @@
-# coding: Windows-31J
 
 # 銘柄リストを読み込み、銘柄に関する情報を供給するクラス
 class StockListLoader
