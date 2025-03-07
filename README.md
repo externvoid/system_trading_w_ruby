@@ -23,7 +23,7 @@ ruby bin¥simulate.rb 設定ファイル名
 
 ・1銘柄だけのシミュレーションをする
 ruby bin¥simulate.rb 設定ファイル名 証券コード
-
+[坂本タクマになる方法](https://sakamototakuma.blogspot.com/))
 
 株価リストファイルの仕様, pp. 170
 
