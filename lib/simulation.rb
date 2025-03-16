@@ -1,4 +1,3 @@
-
 require "./lib/trading_system"
 require "./lib/recorder"
 

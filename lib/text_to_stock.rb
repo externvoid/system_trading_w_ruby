@@ -1,4 +1,3 @@
-
 require "./lib/stock"
 require "./lib/stock_list_loader"
 require "date"

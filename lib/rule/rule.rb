@@ -1,4 +1,3 @@
-
 require "./lib/trade"
 require "./lib/tick"
 

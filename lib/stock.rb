@@ -1,4 +1,3 @@
-
 # 株を表すクラス
 class Stock
   attr_reader :code, :market, :unit, :prices
