@@ -1,4 +1,3 @@
-
 # トレーディングシステムの各ルールの管理をするクラス
 class TradingSystem
   def initialize(rules = {})

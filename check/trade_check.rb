@@ -1,4 +1,3 @@
-
 require "./lib/trade"
 
 trade = Trade.new(stock_code:  8604,

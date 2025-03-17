@@ -1,4 +1,3 @@
-
 require "./lib/base"
 require "./lib/text_to_stock"
 

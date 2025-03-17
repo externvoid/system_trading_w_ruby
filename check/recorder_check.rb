@@ -1,9 +1,7 @@
-
 require "./lib/trading_system"
 require "./lib/recorder"
 require "./lib/base"
 require "./lib/text_to_stock"
-require "pp"
 
 @data = TextToStock.new(stock_list: "tosho_list.txt")
 @trading_system =

@@ -1,4 +1,3 @@
-
 require "./lib/base"
 
 # ストップクラス

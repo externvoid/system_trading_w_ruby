@@ -1,5 +1,3 @@
-
-require "pp"
 require "./lib/stock"
 require "./lib/base"
 

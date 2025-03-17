@@ -1,4 +1,3 @@
-
 require "./lib/base"
 
 # 真の値幅の平均クラス

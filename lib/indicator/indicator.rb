@@ -1,4 +1,3 @@
-
 require "./lib/array"
 
 # テクニカル指標の親クラス

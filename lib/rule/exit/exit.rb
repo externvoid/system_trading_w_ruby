@@ -1,4 +1,3 @@
-
 require "./lib/rule/rule"
 
 # 手仕舞いルールの親クラス

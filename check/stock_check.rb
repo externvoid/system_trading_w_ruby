@@ -1,4 +1,3 @@
-
 require "./lib/stock"
 
 stock = Stock.new(8604, :t, 100)

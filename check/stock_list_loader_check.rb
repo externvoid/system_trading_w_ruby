@@ -1,4 +1,3 @@
-
 require "./lib/stock_list_loader"
 
 sll = StockListLoader.new("data/tosho_list.txt")

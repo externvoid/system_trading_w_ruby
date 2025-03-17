@@ -1,4 +1,3 @@
-
 require "open-uri"
 
 # Yahooの銘柄情報ページから情報を取得し、

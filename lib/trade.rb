@@ -1,4 +1,3 @@
-
 # 取引を表すクラス
 class Trade
   attr_accessor :stock_code, :trade_type, :entry_date,

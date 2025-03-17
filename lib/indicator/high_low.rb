@@ -1,4 +1,3 @@
-
 require "./lib/base"
 
 # 区間の高値安値クラス

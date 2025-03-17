@@ -1,4 +1,3 @@
-
 require "./lib/tick"
 
 puts Tick.size(100)    #=> 1

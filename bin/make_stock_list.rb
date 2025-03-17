@@ -1,4 +1,3 @@
-
 require "./lib/stock_list_maker"
 
 # 東証銘柄の銘柄リストを作る

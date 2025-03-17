@@ -1,4 +1,3 @@
-
 require "./lib/stock_data_getter"
 
 # 東証銘柄をダウンロードする

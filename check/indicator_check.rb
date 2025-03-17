@@ -1,4 +1,3 @@
-
 require "./lib/indicator/indicator"
 
 class MyIndicator < Indicator

@@ -1,4 +1,3 @@
-
 require "./lib/pan_database_to_stock"
 
 pdts = PanDatabaseToStock.new(stock_list:

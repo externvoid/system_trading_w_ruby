@@ -1,4 +1,3 @@
-
 require "./lib/text_to_stock"
 
 tts = TextToStock.new(data_dir:       "data",
