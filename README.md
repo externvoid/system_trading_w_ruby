@@ -99,7 +99,7 @@ e.g.
 前前日の終値500, 前日高安が520, 510ならTRは20(520 - 500)
 ATRを使ったストップロスとは当日480を下回ったら乖離率の如何によらずポジション解消
 
-SQLite3対応版作成に前立ち気付いた事
+SQLite3対応版作成に先立ち気付いた事
 1. def market(index), text_to_stock.rb, シンボルを返す必要は無い
 2. to_i -> to_f, text_to_stock.rb
 3. 売買ルール(e.g. estrangement.rb)にデータソース(Text or Pan)を記載
