@@ -15,6 +15,7 @@ date,open,high,low,close,volume,adj
 8001,東証1部,1000
 8604,東証1部,1000
 ...
+```
 
  2. ruby command 
 ```bash
@@ -43,3 +44,13 @@ Simulation.setting "estrangement", "0.0.0" do
   end
 ...
 ```
+- データソースの選択
+  1. simulator.rb
+  requireするモジュールでデータソースを選択
+  text_to_stock, pan_database_to_stock, sqlite3_to_stock
+
+  2. text_to_stock -> require stock_list_loader
+  tosho_list.txtからStockListLoaderクラスが銘柄リストを作成する。
+  更に銘柄.txtからStcokクラスのインスタンス(Historical Data)を生成する。
+
+  3. sqlite3_to_stock -> require stock_list_via_sqlite3

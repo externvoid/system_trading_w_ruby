@@ -25,7 +25,7 @@ class StockListLoader
   end
 
   def units
-    @utints ||= stock_info.map {|info| info[:unit]}
+    @units ||= stock_info.map {|info| info[:unit]}
   end
 
   def filter_by_market_section(*sections)
@@ -33,6 +33,9 @@ class StockListLoader
     @stock_info = stock_info.find_all do |info|
       sections.include?(info[:market_section])
     end
+    @codes = nil
+    @market_sections = nil
+    @units = nil
     self
   end
 end
