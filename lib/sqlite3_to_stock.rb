@@ -38,7 +38,7 @@ class TextToStock
   def market(index)
     section = @list_loader.market_sections[index]
     case section
-    when /東証|マザーズ/
+    when /東証/
       :t
     when /名/
       :n
@@ -46,6 +46,8 @@ class TextToStock
       :f
     when /札/
       :s
+    when /-/
+      :i
     end
   end
 
@@ -57,7 +59,7 @@ class TextToStock
     lines[fi..ti].each do |line|
       data = line.split(",")
       date = data[0]
-      prices_and_volume = data[1..5].map {|d| d.to_i}
+      prices_and_volume = data[1..5].map {|d| d.to_f}
       stock.add_price(date, *prices_and_volume)
     end
   end

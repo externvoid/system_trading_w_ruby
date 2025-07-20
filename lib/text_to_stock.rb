@@ -57,7 +57,7 @@ class TextToStock
     lines[fi..ti].each do |line|
       data = line.split(",")
       date = data[0]
-      prices_and_volume = data[1..5].map {|d| d.to_i}
+      prices_and_volume = data[1..5].map {|d| d.to_f}
       stock.add_price(date, *prices_and_volume)
     end
   end
