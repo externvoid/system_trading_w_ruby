@@ -5,6 +5,11 @@ class Array
   # 合計
   def sum
     self.inject(:+)
+    # if self.nil?
+    #   puts '-- self is nil --'; exit
+    # else
+    #   self.inject(:+)
+    # end
   end
 
   # 平均

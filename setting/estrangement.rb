@@ -1,4 +1,4 @@
-Simulation.setting "estrangement", "0.0.0" do
+Simulation.setting "estrangement", "1.0.0" do
   trading_system do
     entry  EstrangementEntry, span: 20, rate: 5
     exit   StopOutExit
@@ -7,8 +7,8 @@ Simulation.setting "estrangement", "0.0.0" do
     filter MovingAverageDirectionFilter, span: 40
   end
 
-  from "2000-01-04"
-  to   "2012-12-28"
+  from "2010-01-04"
+  to   "2011-08-31"
 
   data_loader TextToStock, data_dir: "data",
                            stock_list: "stock.db",
