@@ -30,7 +30,7 @@ class Simulation
     set_dates_to_data_loader
     @data_loader.each_stock do |stock|
       simulate(stock)
-      puts stock.code
+      puts "#{stock.code} #{stock.market}" if ENV.fetch("TS1") == "1"
       next if @trades.empty?
       if @record_every_stock
         @recorder.record_a_stock(@trades)

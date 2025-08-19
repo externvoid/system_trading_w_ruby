@@ -36,7 +36,9 @@ class StockListLoader
   def filter_by_market_section(*selections)
     return self unless selections[0]
     @stock_info = stock_info.find_all do |info|
-      selections.include?(info[:market_section])
+      # selections.include?(info[:market_section])
+      ar = selections.map do |e| info[:market_section].match? e end
+      ar.include? true
     end
 #  フィルタリングによってデータが変わったので、キャッシュをクリアする
     @codes = nil
