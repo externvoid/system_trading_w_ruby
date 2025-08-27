@@ -4,28 +4,28 @@ module Tick
   module_function
   # 呼値単位
   def size(price)
-    if price <= 3_000
+    if price <= 3000
       1
-    elsif price <= 5_000
+    elsif 3000 < price && price <= 5000
       5
-    elsif price <= 30_000
+    elsif 5000 < price && price <= 30000
       10
-    elsif price <= 50_000
+    elsif 30000 < price && price <= 50000
       50
-    elsif price <= 300_000
+    elsif 50000 < price && price <= 300000
       100
-    elsif price <= 500_000
+    elsif 300000 < price && price <= 500000
       500
-    elsif price <= 3_000_000
-      1_000
-    elsif price <= 5_000_000
-      5_000
-    elsif price <= 30_000_000
-      10_000
-    elsif price <= 50_000_000
-      50_000
-    else
-      100_000
+    elsif 500000 < price && price <= 3000000
+      1000
+    elsif 3000000 < price && price <= 5000000
+      5000
+    elsif 5000000 < price && price <= 30000000
+      10000
+    elsif 30000000 < price && price <= 50000000
+      50000
+    elsif 50000000 < price
+      100000
     end
   end
 

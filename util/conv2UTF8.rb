@@ -21,40 +21,40 @@ def delSomething(sjis=false)
   end
 end
 
-# delSomething(true) {|file, content|
-#   begin
-#     # UTF-8に変換して上書き保存
-#     File.write(file, content.encode("UTF-8"))
-#     
-#     puts "#{file} をUTF-8に変換しました"
-#   rescue => e
-#     puts "#{file} の変換に失敗しました: #{e.message}"
-#   end
-# }
-#
-# delSomething {|file, content|
-#   lines = content.lines
-#   # 変更が必要かチェック
-#   if lines.any? { |line| line =~ TARGET_PATTERN }
-#     # 対象行を除外して新しい内容を作成
-#     new_content = lines.reject { |line| line =~ TARGET_PATTERN }.join
-#     
-#     # ファイルに書き戻す
-#     File.write(file, new_content)
-#     puts "Delete Windows-31J : #{file}"
-#   end
-# }
-#
-# delSomething {|file, content|
-#   lines = content.lines
-#   if lines.first == "\r\n" then
-#     lines.shift 
-#     new_content = lines.join
-#     # ファイルに書き戻す
-#     File.write(file, new_content)
-#     puts "Delete First Empty Line: #{file}"
-#   end
-# }
+delSomething(true) {|file, content|
+  begin
+    # UTF-8に変換して上書き保存
+    File.write(file, content.encode("UTF-8"))
+
+    puts "#{file} をUTF-8に変換しました"
+  rescue => e
+    puts "#{file} の変換に失敗しました: #{e.message}"
+  end
+}
+
+delSomething {|file, content|
+  lines = content.lines
+  # 変更が必要かチェック
+  if lines.any? { |line| line =~ TARGET_PATTERN }
+    # 対象行を除外して新しい内容を作成
+    new_content = lines.reject { |line| line =~ TARGET_PATTERN }.join
+
+    # ファイルに書き戻す
+    File.write(file, new_content)
+    puts "Delete Windows-31J : #{file}"
+  end
+}
+
+delSomething {|file, content|
+  lines = content.lines
+  if lines.first == "\r\n" then
+    lines.shift 
+    new_content = lines.join
+    # ファイルに書き戻す
+    File.write(file, new_content)
+    puts "Delete First Empty Line: #{file}"
+  end
+}
 
 delSomething do |file, content|
   # DOS to Unix

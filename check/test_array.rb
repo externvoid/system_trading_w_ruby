@@ -17,3 +17,4 @@ class TestArray < Test::Unit::TestCase
 
 
 end
+# [Ruby標準のテスティングフレームワークで手軽にテストコードを書く方法 #RSpec - Qiita](https://qiita.com/jnchito/items/ff4f7a23addbd8dbc460)

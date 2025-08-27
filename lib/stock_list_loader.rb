@@ -7,7 +7,7 @@ class StockListLoader
       raise "データベースファイルを指定してください"
     end
     db = SQLite3::Database.new(database_file)
-    sql = "SELECT code, exchange FROM codeTbl"
+    sql = "SELECT code, exchange FROM codeTbl;"
     # [code, exchange, 100] の配列を作成
     @stock_list = db.execute(sql).map do |row|
       [row[0], row[1], 100]

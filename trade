@@ -1,0 +1,14 @@
+#!/bin/sh
+echo $1
+if [ $# -eq 0 ]; then
+  cat << EOS
+usage example
+./trade setting/estrangement.rb
+or
+./trade setting/estrangement.rb 8604
+EOS
+elif [ $# -eq 1 ]; then
+  ruby bin/main.rb $1
+elif [ $# -eq 2 ]; then
+  ruby bin/main.rb $1 $2
+fi
